@@ -1,0 +1,83 @@
+body {
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.container>img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.title-card {
+    color: hsl(0, 0%, 100%);
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.text-card {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px
+}
+
+.flex span {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.flex span img {
+    margin-right: 5px
+}
+
+.cyan {
+    color: hsl(178, 100%, 50%);
+
+}
+
+.soft-blue {
+    color: hsl(215, 51%, 70%);
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%)
+}
+
+.footer-card {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer-card img {
+    width: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.footer-card span {
+    color: hsl(0, 0%, 100%);
+    margin-left: 5px
+}
