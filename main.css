@@ -2,24 +2,55 @@ body {
     font-size: 18px;
     background-color: hsl(217, 54%, 11%);
     font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .container {
     background-color: hsl(216, 50%, 16%);
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 300px;
     padding: 15px;
     border-radius: 20px;
     margin-top: 20px;
 }
 
-.container>img {
+.container .image {
+    position: relative;
+    transition: 0.5s;
+}
+
+.container .image:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.container .image .img {
     width: 100%;
     border-radius: 20px;
+    display: block;
+
+}
+
+.container .image .view-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.container .image:hover .view-icon {
+    display: block;
 }
 
 .title-card {
@@ -80,4 +111,10 @@ hr {
 .footer-card span {
     color: hsl(0, 0%, 100%);
     margin-left: 5px
+}
+
+.footer-card span:hover,
+.title-card:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
